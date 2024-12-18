@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>메인 | 참수리</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="">
+    <meta name="keywords" content="참수리, 쇼핑몰, 쇼핑몰기획전, 기획전, 참기획전, 추천상품, 인기상품, 신규상품">
+    <meta name="author" content="참수리">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon and Apple Icons-->
+    <link rel="icon" type="image/x-icon" href="../resources/img/common/favicon.ico">
+    <link rel="icon" type="image/png" href="../resources/img/common/favicon.png">
+    <link rel="apple-touch-icon" href="../resources/img/common/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../resources/img/common/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../resources/img/common/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../resources/img/common/touch-icon-ipad-retina.png">
+    <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../resources/css/vendor.min.css">
+    <!-- Main Template Styles-->
+    <link id="mainStyles" rel="stylesheet" media="screen" href="../resources/css/styles.min.css">
+    <!-- Modernizr-->
+    <script src="../resources/js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- 모바일용 Off-Canvas Category Menu -->
+    <div class="offcanvas-container" id="shop-categories">
+      <!-- 로그인시 -->
+      <a class="account-link hidden-md-up2" href="#">
+        <div class="user-ava"><img src="../resources/img/temp/img_user.jpg" alt=""></div>
+        <div class="user-info">
+          <div class="user-name"><strong class="name">홍길동</strong>님</div>
+          <span class="text-sm text-white opacity-60">반갑습니다.</span>
+        </div>
+      </a>
+      <!-- //로그인시 -->
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children">
+            <span>
+              <a href="#">식품</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span>
+              <a href="#">가구/홈</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span>
+              <a href="#">가전/디지털</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span>
+              <a href="#">스포츠/자동차</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span>
+              <a href="#">취미/독서</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- //모바일용 Off-Canvas Category Menu -->
+    <!-- Topbar-->
+    <div class="topbar">
+    	<div class="h-banner">
+			<div class="img"><img src="../resources/img/common/h_banner.png"></div>
+			<p>참수리몰 임직원은 평창올림픽의 <br>성공적 개최를 기원합니다.</p>
+			<a href="#" class="btn-close"><i class="icon-cross"></i></a>
+		</div>
+    	<div class="gl-menu">
+	    	<div class="inner_cm">
+				<div class="topbar-column">
+					<div class="hidden-md-max">
+						<a href="#" class="topleft">홈</a>
+						<a href="#" class="topleft">공지사항</a>
+						<a href="#" class="topleft">즐겨찾기</a>
+					</div>
+				</div>
+				<div class="topbar-column">
+					<a href="#" class="hidden-md-up2 mypage topleft"><i class="icon-head"></i></a>
+					<a href="#" class="hidden-md-max topleft">로그인</a>
+					<a href="#" class="hidden-md-max topleft">회원가입</a>
+					<a href="#" class="lineno topleft">
+						<span class="hidden-md-max">장바구니(</span>
+						<i class="hidden-md-up2 icon-bag"></i>
+						<span class="count">15</span>
+						<span class="hidden-md-max">)</span>
+					</a>
+					<a href="#" class="hidden-md-max topleft">주문내역</a>
+					<a href="#" class="hidden-md-max topleft">마이쇼핑</a>
+				</div>
+		    </div>
+		</div>
+	    <!-- Search-->
+	    <form method="get">
+	    	<div class="search-area">
+	    		<div class="inner_cm">
+					<div class="search-column">
+						<a href="index.html" class="comimg logo"><h1>참수리</h1></a>
+						<div class="search-box">
+							<input type="text" name="site_search" class="search_input">
+							<a href="#" class="btn_search">
+								<i class="icon-search"><span class="blind">검색</span></i>
+							</a>
+							<i class="comimg bg_logo"></i>
+						</div>
+					</div>
+					<div class="hidden-md-down search-column">
+						<div class="head_banner">
+							<div class="owl-carousel controls" data-owl-carousel="{ &quot;nav&quot;: true,&quot;loop&quot;: true,&quot;autoplay&quot;: true, &quot;autoplayTimeout&quot;: 3500}">
+								<img src="../resources/img/temp/header_banner_01.png" alt="">
+								<img src="../resources/img/temp/header_banner_02.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+    </div>
+
+    <!-- Navbar-->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+    <header class="navbar navbar-sticky">
+		<div class="inner_cm">
+			<!-- Off-Canvas Toggle (#shop-categories)-->
+			<!-- mobile에서 보임 -->
+			<a class="offcanvas-toggle cats-toggle hidden-md-up2" href="#shop-categories" data-toggle="offcanvas"></a>
+			<!-- //mobile에서 보임 -->
+			<!-- 20180114 pc에서 보임 -->
+			<a href="#site-search" class="offcanvas-toggle cats-toggle hidden-md-max" ></a>
+			<!-- //20180114 pc에서 보임 -->
+			<a href="#" class="comimg txt_unit">
+				<span class="blind">참기획전</span>
+			</a>
+			<!-- Main Navigation-->
+			<nav class="site-menu">
+				<ul>
+					<li class="has-megamenu">
+						<a href="shop_list.html"><span>식품/생활</span></a>
+						<ul class="mega-menu">
+							<li><a href="#">서브1</a></li>
+							<li><a href="#">서브2</a></li>
+						</ul>
+					</li>
+					<li class="has-megamenu">
+						<a href="shop_list.html"><span>가구/홈</span></a>
+						<ul class="mega-menu">
+							<li><a href="#">서브1</a></li>
+							<li><a href="#">서브2</a></li>
+						</ul>
+					</li>
+					<li class="has-megamenu"><a href="shop_list.html"><span>가전/디지털</span></a></li>
+					<li class="has-megamenu"><a href="shop_list.html"><span>스포츠/자동차</span></a></li>
+					<li class="has-megamenu">
+						<a href="shop_list.html"><span>취미/독서</span></a>
+						<ul class="mega-menu">
+							<li><a href="#">서브1</a></li>
+							<li><a href="#">서브2</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav> 
+		</div>
+    </header>
+
+    <!-- 20180114 PC전체메뉴 Off-Canvas Category Menu-->
+    <div class="site-search">
+    	<div class="inner_cm">
+    		<div class="all-menu">
+    			<dl class="cl">
+	    			<dt><a href="#">IT용품</a></dt>
+	    			<dd>
+	    				<ul class="depth2">
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">소프트웨어</a></li>
+	    					<li><a href="#">소프트웨어</a></li>
+	    				</ul>
+	    			</dd>
+	    		</dl>
+    			<dl class="cl">
+	    			<dt><a href="#">IT용품</a></dt>
+	    			<dd>
+	    				<ul class="depth2">
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">소프트웨어</a></li>
+	    				</ul>
+	    			</dd>
+	    		</dl>
+    			<dl class="cl">
+	    			<dt><a href="#">IT용품</a></dt>
+	    			<dd>
+	    				<ul class="depth2">
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">소프트웨어</a></li>
+	    				</ul>
+	    			</dd>
+	    		</dl>
+    			<dl class="cl">
+	    			<dt><a href="#">IT용품</a></dt>
+	    			<dd>
+	    				<ul class="depth2">
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">소프트웨어</a></li>
+	    				</ul>
+	    			</dd>
+	    		</dl>
+    			<dl class="cl">
+	    			<dt><a href="#">IT용품</a></dt>
+	    			<dd>
+	    				<ul class="depth2">
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">소프트웨어</a></li>
+	    				</ul>
+	    			</dd>
+	    		</dl>
+	    	</div>
+	    	<div class="all-menu">
+    			<dl class="cl">
+	    			<dt><a href="#">IT용품</a></dt>
+	    			<dd>
+	    				<ul class="depth2">
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">소프트웨어</a></li>
+	    					<li><a href="#">소프트웨어</a></li>
+	    				</ul>
+	    			</dd>
+	    		</dl>
+    			<dl class="cl">
+	    			<dt><a href="#">IT용품</a></dt>
+	    			<dd>
+	    				<ul class="depth2">
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">소프트웨어</a></li>
+	    				</ul>
+	    			</dd>
+	    		</dl>
+    			<dl class="cl">
+	    			<dt><a href="#">IT용품</a></dt>
+	    			<dd>
+	    				<ul class="depth2">
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">소프트웨어</a></li>
+	    				</ul>
+	    			</dd>
+	    		</dl>
+    			<dl class="cl">
+	    			<dt><a href="#">IT용품</a></dt>
+	    			<dd>
+	    				<ul class="depth2">
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">소프트웨어</a></li>
+	    				</ul>
+	    			</dd>
+	    		</dl>
+    			<dl class="cl">
+	    			<dt><a href="#">IT용품</a></dt>
+	    			<dd>
+	    				<ul class="depth2">
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">소프트웨어</a></li>
+	    				</ul>
+	    			</dd>
+	    		</dl>
+	    	</div>
+	    	<div class="all-menu">
+    			<dl class="cl">
+	    			<dt><a href="#">IT용품</a></dt>
+	    			<dd>
+	    				<ul class="depth2">
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">컴퓨터/주변기기</a></li>
+	    					<li><a href="#">전산소모품</a></li>
+	    					<li><a href="#">소프트웨어</a></li>
+	    				</ul>
+	    			</dd>
+	    		</dl>
+    		</div>
+    		<a href="#" class="close-btn"><i class="icon-cross"></i></a>
+    	</div>
+    </div>
+	<!-- //20180114 PC전체메뉴 Off-Canvas Category Menu-->
+
+	<!-- 20180126 Main Banner -->
+	<style>
+	.main-popup {position:absolute;top:250px;left:50%;margin:0 0 0 -160px;max-width:320px;border:2px solid #555;background:#fff;z-index:400;text-align:center;padding:20px 20px 0 20px;}
+	.main-popup h2 {font-weight:bold;margin-top:15px;}
+	.main-popup p {font-size:14px;font-weight:bold;color:#333;}
+    .main-popup img {max-width:100%;max-height:100%;margin:10px 0;}
+    .main-popup-body {width:100%;height:100%;overflow:hidden;}
+	.main-popup-footer {position:relative;background:#fff;height:30px;line-height:30px;padding:5px 0;border-top:#eaeaea 1px solid;font-size:12px;}
+	.main-popup-footer:after {content:"";display:block;clear:both;}
+	.main-popup-footer label.close-main-popup {float:left;line-height:45px;font-size:13px;}
+	.main-popup-footer button {float:right;margin:5px 0 0 0;}
+	</style>
+	<div class="main-popup" data-key="00000001077" style="display:none;">
+		<div class="main-popup-body">
+			<div><img src="../resources/img/main/logo_banner.png"></div>
+			<h2 class="text-primary">오픈 준비중 입니다.</h2>
+			<p>홈페이지를 찾아주시는 모든 분들께 더 나은 서비스를 제공하기 위해 <span >홈페이지가 새 단장 중에 있습니다.</span><p>
+			<p>좋은 모습으로 곧 뵙겠습니다.</p>
+			<p>감사합니다.</p>
+		</div>
+		<div class="main-popup-footer">
+			<label class="close-main-popup" data-expire="1">
+				<input type="checkbox">
+				<span>오늘 다시 보지 않기</span>
+			</label>
+			<button type="btn" class="btn btn-md btn-primary close-main-popup">닫기</button>
+		</div>
+	</div>
+	<!-- //20180126 Main Banner -->
+
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+		<!-- Page Content-->
+		<!-- Main Slider-->
+		<section class="hero-slider main-img">
+			<div class="owl-carousel large-controls dots-inside" data-owl-carousel="{ &quot;nav&quot;: true, &quot;dots&quot;: true, &quot;loop&quot;: false, &quot;autoplay&quot;: false, &quot;autoplayTimeout&quot;: 7000 }">
+				<div class="item main_img1">
+					<div class="inner_cm">
+						<div class="from-bottom">
+							<a class="btn btn-lg btn-primary scale-up delay-2" href="#">자세히보기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Top Banner -->
+		<section class="container padding-top-0x">
+			<div class="owl-carousel main-banner" data-owl-carousel="{ &quot;nav&quot;: false, &quot;dots&quot;: false, &quot;loop&quot;: true,&quot;margin&quot;:18,&quot;autoplay&quot;: true, &quot;autoplayTimeout&quot;: 2500, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;630&quot;:{&quot;items&quot;:2},&quot;991&quot;:{&quot;items&quot;:3},&quot;1200&quot;:{&quot;items&quot;:4}} }">
+				<a href="#" class="img"><img src="../resources/img/main/banner_1.jpg" alt="정관장 선물세트"></a>
+				<a href="#" class="img"><img src="../resources/img/main/banner_2.jpg" alt="농협 홍삼 한삼인"></a>
+				<a href="#" class="img"><img src="../resources/img/main/banner_3.jpg" alt="동원 선물세트"></a>
+				<a href="#" class="img"><img src="../resources/img/main/banner_4.jpg" alt="사조 선물세트"></a>
+				<a href="#" class="img"><img src="../resources/img/main/banner_5.jpg" alt="CJ 스팸 기획전"></a>
+				<a href="#" class="img"><img src="../resources/img/main/banner_6.jpg" alt="애경 선물세트"></a>
+				<a href="#" class="img"><img src="../resources/img/main/banner_7.jpg" alt="아모레 선물세트"></a>
+				<a href="#" class="img"><img src="../resources/img/main/banner_8.jpg" alt="광천김 선물세트"></a>
+				<a href="#" class="img"><img src="../resources/img/main/banner_9.jpg" alt="전주전통 한과"></a>
+				<a href="#" class="img"><img src="../resources/img/main/banner_10.jpg" alt="비온 뒤 첫소금"></a>
+			</div>
+		</section>
+
+		<!-- 추천상품 -->
+		<section class="container padding-top-0x">
+			<div class="tit-area main-tit padding-bottom-1x">
+				<h2 class="colum">추천상품</h2>
+				<span class="columr">고객님을 위한 특별한 제안</span>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="product-card margin-bottom-1x">
+						<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list1.jpg" alt=""></a>
+						<div class="product-info">
+							<h3 class="product-title"><a href="#">삼성전자 HD 32인치 TV 자가설치</a></h3>
+							<h4 class="product-price">
+								<del>299,900원</del>
+								<strong class="pointCol2">290,000원</strong>
+							</h4>
+							<div class="cate-area">
+								<span class="category square1">무료배송</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="product-card margin-bottom-1x">
+						<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list1.jpg" alt=""></a>
+						<div class="product-info">
+							<h3 class="product-title"><a href="#">삼성전자 HD 32인치 TV 자가설치</a></h3>
+							<h4 class="product-price">
+								<del>299,900원</del>
+								<strong class="pointCol2">290,000원</strong>
+							</h4>
+							<!-- <div class="cate-area">
+								<span class="category square1">무료배송</span>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="product-card margin-bottom-1x">
+						<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list2.jpg" alt=""></a>
+						<div class="product-info">
+							<h3 class="product-title"><a href="#">삼성전자 HD 32인치 TV 자가설치</a></h3>
+							<h4 class="product-price">
+								<del>299,900원</del>
+								<strong class="pointCol2">290,000원</strong>
+							</h4>
+							<div class="cate-area">
+								<span class="category square1">무료배송</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="product-card margin-bottom-1x">
+						<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list3.jpg" alt=""></a>
+						<div class="product-info">
+							<h3 class="product-title"><a href="#">삼성전자 HD 32인치 TV 자가설치</a></h3>
+							<h4 class="product-price">
+								<del>299,900원</del>
+								<strong class="pointCol2">290,000원</strong>
+							</h4>
+							<!-- <div class="cate-area">
+								<span class="category square1">무료배송</span>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 인기상품 -->
+		<section class="container padding-top-0x">
+			<div class="tit-area main-tit padding-bottom-1x">
+				<h2 class="colum">인기상품</h2>
+				<span class="columr">고객님들의 뜨거운 관심!</span>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="product-card mb-30">
+						<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list1.jpg" alt=""></a>
+						<div class="product-info">
+							<h3 class="product-title"><a href="#">삼성전자 HD 32인치 TV 자가설치</a></h3>
+							<h4 class="product-price">
+								<del>299,900원</del>
+								<strong class="pointCol2">290,000원</strong>
+							</h4>
+							<div class="cate-area">
+								<span class="category square1">무료배송</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="product-card mb-30">
+						<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list1.jpg" alt=""></a>
+						<div class="product-info">
+							<h3 class="product-title"><a href="#">삼성전자 HD 32인치 TV 자가설치</a></h3>
+							<h4 class="product-price">
+								<del>299,900원</del>
+								<strong class="pointCol2">290,000원</strong>
+							</h4>
+							<!-- <div class="cate-area">
+								<span class="category square1">무료배송</span>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="product-card mb-30">
+						<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list2.jpg" alt=""></a>
+						<div class="product-info">
+							<h3 class="product-title"><a href="#">삼성전자 HD 32인치 TV 자가설치</a></h3>
+							<h4 class="product-price">
+								<del>299,900원</del>
+								<strong class="pointCol2">290,000원</strong>
+							</h4>
+							<div class="cate-area">
+								<span class="category square1">무료배송</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="product-card mb-30">
+						<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list3.jpg" alt=""></a>
+						<div class="product-info">
+							<h3 class="product-title"><a href="#">삼성전자 HD 32인치 TV 자가설치</a></h3>
+							<h4 class="product-price">
+								<del>299,900원</del>
+								<strong class="pointCol2">290,000원</strong>
+							</h4>
+							<!-- <div class="cate-area">
+								<span class="category square1">무료배송</span>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 신규상품 -->
+		<section class="container padding-top-0x">
+			<div class="tit-area main-tit padding-bottom-1x">
+				<h2 class="colum">신규상품</h2>
+				<span class="columr">새로운 상품을 가장먼저 만나세요</span>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="product-card mb-30">
+						<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list1.jpg" alt=""></a>
+						<div class="product-info">
+							<h3 class="product-title"><a href="#">삼성전자 HD 32인치 TV 자가설치</a></h3>
+							<h4 class="product-price">
+								<del>299,900원</del>
+								<strong class="pointCol2">290,000원</strong>
+							</h4>
+							<div class="cate-area">
+								<span class="category square1">무료배송</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="product-card mb-30">
+						<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list1.jpg" alt=""></a>
+						<div class="product-info">
+							<h3 class="product-title"><a href="#">삼성전자 HD 32인치 TV 자가설치</a></h3>
+							<h4 class="product-price">
+								<del>299,900원</del>
+								<strong class="pointCol2">290,000원</strong>
+							</h4>
+							<!-- <div class="cate-area">
+								<span class="category square1">무료배송</span>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="product-card mb-30">
+						<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list2.jpg" alt=""></a>
+						<div class="product-info">
+							<h3 class="product-title"><a href="#">삼성전자 HD 32인치 TV 자가설치</a></h3>
+							<h4 class="product-price">
+								<del>299,900원</del>
+								<strong class="pointCol2">290,000원</strong>
+							</h4>
+							<div class="cate-area">
+								<span class="category square1">무료배송</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="product-card mb-30">
+						<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list3.jpg" alt=""></a>
+						<div class="product-info">
+							<h3 class="product-title"><a href="#">삼성전자 HD 32인치 TV 자가설치</a></h3>
+							<h4 class="product-price">
+								<del>299,900원</del>
+								<strong class="pointCol2">290,000원</strong>
+							</h4>
+							<!-- <div class="cate-area">
+								<span class="category square1">무료배송</span>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 20180117 푸터수정 -->
+		<!-- Site Footer-->
+		<footer class="site-footer">
+			<div class="container">
+				<ul class="footer_menu">
+					<li><a href="/info/buy">참수리 이용안내</a></li>
+					<li><a href="/stipulation/collect">이용약관/개인정보처리방침</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="/community/adfee">배너 광고안내</a></li>
+					<li><a href="/info/store">제휴 및 입점안내</a></li>
+					<li><a href="/resources/temp/KWCY_Companyintro_v1.0_20171220.pdf">회사소개</a></li>
+				</ul>
+			</div>
+			<div class="site-info">
+				<div class="container">
+					<address class="footer-address">
+						<div class="">
+							<span class="txt">(주)경우씨와이 대표이사: 유동현 
+								<a href="#" class="btn btn-xsm btn-outline-primary" onclick="javascript:onPopbizInfoCheck();return false;">사업자정보 확인</a>
+							</span>
+							<span class="txt">Tel. 02-6730-3131</span>
+						</div>
+						<div>
+							<span class="txt">06237, 서울시 강남구 논현로85길 21 (BSG빌딩 7F)</span>
+						</div>
+						<div>
+							<span class="txt">BSG Building, 21, Nonhyeon-ro 85-gil, Gangnam-gu, Seoul, Korea, 06237</span>
+						</div>
+						<div>
+							<span class="txt">Copyright&copy; 참수리 All right reserved.</span>
+						</div>
+					</address>
+					<div class="footer-customer">
+						<h6>고객센터 <span class="text-sm">Customer</span></h6>
+						<strong class="text-lg">1577-0000</strong>
+						<div class="customer">
+							<span class="txt">E-mail. help@r3market.com</span>
+						</div>
+					</div>
+					<div class="sns-wrap">
+						<a href="https://www.facebook.com/r3market" target="_blank"><img src="../resources/img/common/icon-f.jpg" alt="facebook"></a>
+						<a href="https://www.facebook.com/r3market" target="_blank"><img src="../resources/img/common/icon-t.jpg" alt="twitter"></a>
+					</div>
+				</div>
+			</div>
+			<div class="site-mark">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-7">
+							<ul class="mark-wrap">
+								<li class="mark1">
+									<a href="#" onclick="javascript:onPopKBAuthMark();return false;"> <img src="../resources/img/common/escrowcmark.gif" border="0"></a>
+								</li>
+								<li class="mark2">
+									<span><img src="../resources/img/common/WebAccessibility.png"></span>	
+								</li>
+								<li class="mark3">
+									<span><img src="../resources/img/common/GSCertificate.png"></span>
+								</li>
+								<li class="mark4">
+									<a href="#" onclick="javascript:onPopbizInfoCheck();return false;"> <img src="../resources/img/common/ftc_log.png" border="0"></a>
+								</li>
+							</li>
+						</div>
+						<div class="col-sm-5">
+							<div class="mark-r3 text-right">
+								<img src="../resources/img/common/r3_logo_1.png" alt="">
+								<span class="txt">참수리는 과학기술정보통신부의 GCS(Global Creative Software) <br class="br-none">사업의 성과물인 R3market platform을 활용하여 개발되었습니다.
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- //20180117 푸터수정 -->
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-arrow-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../resources/js/vendor.min.js"></script>
+    <script src="../resources/js/scripts.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact us | 회사소개 | 참수리</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="">
+    <meta name="keywords" content="참수리, 쇼핑몰, 쇼핑몰기획전, 기획전, 참기획전, 추천상품, 인기상품, 신규상품">
+    <meta name="author" content="참수리">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon and Apple Icons-->
+    <link rel="icon" type="image/x-icon" href="../resources/img/common/favicon.ico">
+    <link rel="icon" type="image/png" href="../resources/img/common/favicon.png">
+    <link rel="apple-touch-icon" href="../resources/img/common/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../resources/img/common/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../resources/img/common/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../resources/img/common/touch-icon-ipad-retina.png">
+    <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../resources/css/vendor.min.css">
+    <!-- Main Template Styles-->
+    <link id="mainStyles" rel="stylesheet" media="screen" href="../resources/css/styles.min.css">
+    <!-- Modernizr-->
+    <script src="../resources/js/modernizr.min.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?client=gme-wixcomltd2&amp;key=AIzaSyD478NwZOcwTgex8D0Qy4G6xJZHwp1o3rw&amp;callback=initMap&amp;language=ko"></script>
+  </head>
+  <!-- Body-->
+  <body onload="initialize()">
+    <!-- Off-Canvas Category Menu-->
+    <div class="offcanvas-container" id="shop-categories">
+      <!-- 로그인시 -->
+      <a class="account-link hidden-md-up2" href="#">
+        <div class="user-ava"><img src="../resources/img/temp/img_user.jpg" alt=""></div>
+        <div class="user-info">
+          <div class="user-name"><strong class="name">홍길동</strong>님</div>
+          <span class="text-sm text-white opacity-60">반갑습니다.</span>
+        </div>
+      </a>
+      <!-- //로그인시 -->
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children">
+            <span>
+              <a href="#">식품</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span>
+              <a href="#">가구/홈</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span>
+              <a href="#">가전/디지털</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span>
+              <a href="#">스포츠/자동차</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span>
+              <a href="#">취미/독서</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Topbar-->
+    <div class="topbar">
+    	<div class="gl-menu">
+	    	<div class="inner_cm">
+				<div class="topbar-column">
+					<div class="hidden-md-max">
+						<a href="#" class="topleft">홈</a>
+						<a href="#" class="topleft">공지사항</a>
+						<a href="#" class="topleft">즐겨찾기</a>
+					</div>
+				</div>
+				<div class="topbar-column">
+					<a href="#" class="hidden-md-up2 mypage topleft"><i class="icon-head"></i></a>
+					<a href="#" class="hidden-md-max topleft">로그인</a>
+					<a href="#" class="hidden-md-max topleft">회원가입</a>
+					<a href="#" class="lineno topleft">
+						<span class="hidden-md-max">장바구니(</span>
+						<i class="hidden-md-up2 icon-bag"></i>
+						<span class="count">15</span>
+						<span class="hidden-md-max">)</span>
+					</a>
+					<a href="#" class="hidden-md-max topleft">주문내역</a>
+					<a href="#" class="hidden-md-max topleft">마이쇼핑</a>
+				</div>
+		    </div>
+		</div>
+	    <!-- Search-->
+	    <form method="get">
+	    	<div class="search-area">
+	    		<div class="inner_cm">
+					<div class="search-column">
+						<a href="index.html" class="comimg logo"><h1>참수리</h1></a>
+						<div class="search-box">
+							<input type="text" name="site_search" class="search_input">
+							<a href="#" class="btn_search">
+								<i class="icon-search"><span class="blind">검색</span></i>
+							</a>
+							<i class="comimg bg_logo"></i>
+						</div>
+					</div>
+					<div class="hidden-md-down search-column">
+						<div class="head_banner">
+							<div class="owl-carousel controls" data-owl-carousel="{ &quot;nav&quot;: true,&quot;loop&quot;: true}">
+								<img src="../resources/img/temp/img_head_bn1.jpg" alt="">
+								<img src="../resources/img/temp/img_head_bn2.jpg" alt="">
+								<img src="../resources/img/temp/img_head_bn3.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>	
+
+    <!-- Navbar-->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+    <header class="navbar navbar-sticky">
+		<div class="inner_cm">
+			<!-- Off-Canvas Toggle (#shop-categories)-->
+			<a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
+			<a href="#" class="comimg txt_unit">
+				<span class="blind">참기획전</span>
+			</a>
+			<!-- Main Navigation-->
+			<nav class="site-menu">
+				<ul>
+					<li class="has-megamenu">
+						<a href="shop_list.html"><span>식품/생활</span></a>
+						<ul class="mega-menu">
+							<li><a href="#">서브1</a></li>
+							<li><a href="#">서브2</a></li>
+						</ul>
+					</li>
+					<li class="has-megamenu">
+						<a href="shop_list.html"><span>가구/홈</span></a>
+						<ul class="mega-menu">
+							<li><a href="#">서브1</a></li>
+							<li><a href="#">서브2</a></li>
+						</ul>
+					</li>
+					<li class="has-megamenu"><a href="shop_list.html"><span>가전/디지털</span></a></li>
+					<li class="has-megamenu"><a href="shop_list.html"><span>스포츠/자동차</span></a></li>
+					<li class="has-megamenu">
+						<a href="shop_list.html"><span>취미/독서</span></a>
+						<ul class="mega-menu">
+							<li><a href="#">서브1</a></li>
+							<li><a href="#">서브2</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav> 
+		</div>
+    </header>
+
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+		<!-- Page Title-->
+		<div class="page-title">
+			<div class="container">
+				<div class="column">
+					<h2>Contact us</h2>
+				</div>
+				<div class="column">
+					<ul class="breadcrumbs">
+						<li><a href="index.html">홈</a></li>
+						<li><a href="shop_list.html">회사소개</a></li>
+						<li>Contact us</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Page Content -->
+		<section class="container padding-top-3x padding-bottom-3x">
+			<div class="row">
+				<div class="col-lg-3">
+					<nav class="list-group">
+						<a class="list-group-item" href="company1.html">일반현황</a>
+						<a class="list-group-item" href="company2.html">사업영역</a>
+						<a class="list-group-item" href="company3.html">제품 및 서비스</a>
+						<a class="list-group-item" href="company4.html">우리의 로드맵</a>
+						<a class="list-group-item active" href="company5.html">Contact us</a>
+					</nav>
+				</div>
+				<div class="col-lg-9">
+					<div class="padding-top-2x mt-2 hidden-lg-up"></div> 
+					<div class="company5">
+						<div class="row">
+				          <div class="col-md-6">
+				            <div class="display-5 text-muted opacity-75 mb-30">헬프데스크 <span class="text-sm">상담 및 불만접수, 서비스 안내</span></div>
+				            <ul class="list-icon">
+				              <li> <i class="icon-bell"></i>1670-9112</li>
+				              <li> <i class="icon-mail"></i><a class="navi-link" href="mailto:help@r3market.com">help@r3market.com</a></li>
+				            </ul>
+				          </div>
+				          <div class="col-md-6">
+				            <div class="display-5 text-muted opacity-75 mb-30">입점, 마케팅 문의 및 지원</div>
+				            <ul class="list-icon">
+				              <li> <i class="icon-bell"></i>02-6730-</li>
+				              <li> <i class="icon-mail"></i><a class="navi-link" href="mailto:support@r3market.com">support@r3market.com</a></li>
+				            </ul>
+				          </div>
+				        </div>
+				        <hr class="margin-top-2x margin-bottom-2x">
+						<div class="row">
+				          <div class="col-md-6">
+				            <div class="display-5 text-muted opacity-75 mb-30">기술지원 및 연계 문의 </div>
+				            <ul class="list-icon">
+				              <li> <i class="icon-mail"></i><a class="navi-link" href="mailto:tech@r3market.com">tech@r3market.com</a></li>
+				            </ul>
+				          </div>
+				          <div class="col-md-6">
+				            <div class="display-5 text-muted opacity-75 mb-30">제휴 및 사업연계 문의</div>
+				            <ul class="list-icon">
+				              <li> <i class="icon-bell"></i>02-6730-3238</li>
+				              <li> <i class="icon-mail"></i><a class="navi-link" href="mailto:co_biz@r3market.com">co_biz@r3market.com</a></li>
+				            </ul>
+				          </div>
+				        </div>
+				        <hr class="margin-top-2x margin-bottom-2x">
+						<div class="row">
+				          <div class="col-md-6">
+				            <div class="display-5 text-muted opacity-75 mb-30">개인정보보호 문의 및 접수</div>
+				            <ul class="list-icon">
+				              <li> <i class="icon-mail"></i><a class="navi-link" href="mailto:security@r3market.com">security@r3market.com</a></li>
+				            </ul>
+				          </div>
+				        </div>
+				    </div>
+
+			        <h3 class="margin-top-3x text-center mb-30">Outlet Stores</h3>
+			        <div class="row">
+			          <div class="col-md-12">
+			            <div class="card mb-30">
+			              <div>
+			              	<div id="map_view" style="width:100%; height:400px;"></div> 
+			              </div>
+			              <div class="card-body">
+			                <ul class="list-icon">
+			                  <li> <i class="icon-map"></i>06237, 서울시 강남구 논현로85길 21 (BSG빌딩), (주)비에스지파트너스</li>
+			                  <li> <i class="icon-bell"></i>+82-2-6730-3200</li>
+			                  <li> <i class="icon-mail"></i><a class="navi-link" href="mailto:BSGinfo@BSGglobal.com">BSGinfo@BSGglobal.com</a></li>
+			                </ul>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Site Footer-->
+		<footer class="site-footer">
+			<div class="container">
+				<img src="../resources/img/temp/img_footer1.gif" alt="">
+			</div>
+			<div class="site-info">
+				<div class="container">
+					<img src="../resources/img/temp/img_footer2.gif" alt="">
+				</div>
+			</div>
+		</footer>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-arrow-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../resources/js/vendor.min.js"></script>
+    <script src="../resources/js/scripts.min.js"></script>
+    
+    <script> 
+	  function initialize() {
+
+			/*
+				http://openapi.map.naver.com/api/geocode.php?key=f32441ebcd3cc9de474f8081df1e54e3&encoding=euc-kr&coord=LatLng&query=서울특별시 강남구 강남대로 456
+                위와같이 링크에서 뒤에 주소를 적으면 x,y 값을 구할수 있습니다.
+			*/
+			var Y_point			= 37.498931;		// Y 좌표
+			var X_point			= 127.036128;		// X 좌표
+
+			var zoomLevel		= 16;						// 지도의 확대 레벨 : 숫자가 클수록 확대정도가 큼
+
+			var markerTitle		= "참수리몰";				// 현재 위치 마커에 마우스를 오버을때 나타나는 정보
+			var markerMaxWidth	= 300;						// 마커를 클릭했을때 나타나는 말풍선의 최대 크기
+
+			// 말풍선 내용
+			var contentString	= '<div>' +
+			'<strong class="text-lg">참수리몰</strong>'+
+			//'<a href="http://www.daegu.go.kr" target="_blank">http://www.daegu.go.kr</a>'+ //링크도 넣을 수 있음
+			'</div>';
+
+			var myLatlng = new google.maps.LatLng(Y_point, X_point);
+			var mapOptions = {
+					zoom: zoomLevel,
+					center: myLatlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById('map_view'), mapOptions);
+
+			var marker = new google.maps.Marker({
+					position: myLatlng,
+					map: map,
+					title: markerTitle
+			});
+
+			var infowindow = new google.maps.InfoWindow(
+				{
+					content: contentString,
+					maxWidth: markerMaxWidth
+				}
+			);
+
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map, marker);
+			});
+		}
+	</script>
+  </body>
+</html>

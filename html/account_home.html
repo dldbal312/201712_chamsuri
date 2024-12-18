@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>마이쇼핑 | 마이페이지 | 참수리</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="">
+    <meta name="keywords" content="참수리, 쇼핑몰, 쇼핑몰기획전, 기획전, 참기획전, 추천상품, 인기상품, 신규상품">
+    <meta name="author" content="참수리">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon and Apple Icons-->
+    <link rel="icon" type="image/x-icon" href="../resources/img/common/favicon.ico">
+    <link rel="icon" type="image/png" href="../resources/img/common/favicon.png">
+    <link rel="apple-touch-icon" href="../resources/img/common/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../resources/img/common/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../resources/img/common/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../resources/img/common/touch-icon-ipad-retina.png">
+    <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../resources/css/vendor.min.css">
+    <!-- Main Template Styles-->
+    <link id="mainStyles" rel="stylesheet" media="screen" href="../resources/css/styles.min.css">
+    <!-- Modernizr-->
+    <script src="../resources/js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+  	<!-- 20180129 배송조회 팝업 -->
+    <div class="modal fade" id="shippingInfo" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">스마트택배 배송조회</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+              	<colgroup>
+              		<col style="width:35%">
+              		<col style="width:auto">
+              	</colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row">운송장번호</th>
+                    <td>123456789012</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">받는 사람</th>
+                    <td>홍길동</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">보낸 사람</th>
+                    <td>김철수</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">수령 주소</th>
+                    <td>서울시 중구 남대문로가</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+			<div class="table-responsive">
+	            <table class="table table-hover margin-bottom-none">
+					<thead>
+						<tr>
+							<th>시간</th>
+							<th>현재 위치</th>
+							<th>배송 상태</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2017-04-07 11:11:11</td>
+							<td>고객</td>
+							<td>인수자등록</td>
+						</tr>
+						<tr>
+							<td>2017-04-07 11:11:11</td>
+							<td>성북직영</td>
+							<td>집히처리</td>
+						</tr>
+						<tr>
+							<td>2017-04-07 11:11:11</td>
+							<td>대전HUB</td>
+							<td>간선상차</td>
+						</tr>
+						<tr>
+							<td>2017-04-07 11:11:11</td>
+							<td>남서울터미널</td>
+							<td>배달전</td>
+						</tr>
+						<tr>
+							<td>2017-04-07 11:11:11</td>
+							<td>서울 남대문</td>
+							<td>배달출발</td>
+						</tr>
+						<tr>
+							<td>2017-04-07 11:11:11</td>
+							<td>서울 남대문</td>
+							<td>배달완료</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<hr>
+			
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //20180129 배송조회 팝업 -->
+
+    <!-- Off-Canvas Category Menu-->
+    <div class="offcanvas-container" id="shop-categories">
+      <!-- 로그인시 -->
+      <a class="account-link hidden-md-up2" href="#">
+        <div class="user-ava"><img src="../resources/img/temp/img_user.jpg" alt=""></div>
+        <div class="user-info">
+          <div class="user-name"><strong class="name">홍길동</strong>님</div>
+          <span class="text-sm text-white opacity-60">반갑습니다.</span>
+        </div>
+      </a>
+      <!-- //로그인시 -->
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children">
+            <span>
+              <a href="#">식품</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span>
+              <a href="#">가구/홈</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span>
+              <a href="#">가전/디지털</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span>
+              <a href="#">스포츠/자동차</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span>
+              <a href="#">취미/독서</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Topbar-->
+    <div class="topbar">
+    	<div class="gl-menu">
+	    	<div class="inner_cm">
+				<div class="topbar-column">
+					<div class="hidden-md-max">
+						<a href="#" class="topleft">홈</a>
+						<a href="#" class="topleft">공지사항</a>
+						<a href="#" class="topleft">즐겨찾기</a>
+					</div>
+				</div>
+				<div class="topbar-column">
+					<a href="#" class="hidden-md-up2 mypage topleft"><i class="icon-head"></i></a>
+					<a href="#" class="hidden-md-max topleft">로그인</a>
+					<a href="#" class="hidden-md-max topleft">회원가입</a>
+					<a href="#" class="lineno topleft">
+						<span class="hidden-md-max">장바구니(</span>
+						<i class="hidden-md-up2 icon-bag"></i>
+						<span class="count">15</span>
+						<span class="hidden-md-max">)</span>
+					</a>
+					<a href="#" class="hidden-md-max topleft">주문내역</a>
+					<a href="#" class="hidden-md-max topleft">마이쇼핑</a>
+				</div>
+		    </div>
+		</div>
+	    <!-- Search-->
+	    <form method="get">
+	    	<div class="search-area">
+	    		<div class="inner_cm">
+					<div class="search-column">
+						<a href="index.html" class="comimg logo"><h1>참수리</h1></a>
+						<div class="search-box">
+							<input type="text" name="site_search" class="search_input">
+							<a href="#" class="btn_search">
+								<i class="icon-search"><span class="blind">검색</span></i>
+							</a>
+							<i class="comimg bg_logo"></i>
+						</div>
+					</div>
+					<div class="hidden-md-down search-column">
+						<div class="head_banner">
+							<div class="owl-carousel controls" data-owl-carousel="{ &quot;nav&quot;: true,&quot;loop&quot;: true}">
+								<img src="../resources/img/temp/img_head_bn1.jpg" alt="">
+								<img src="../resources/img/temp/img_head_bn2.jpg" alt="">
+								<img src="../resources/img/temp/img_head_bn3.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>	
+
+    <!-- Navbar-->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+    <header class="navbar navbar-sticky">
+		<div class="inner_cm">
+			<!-- Off-Canvas Toggle (#shop-categories)-->
+			<a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
+			<a href="#" class="comimg txt_unit">
+				<span class="blind">참기획전</span>
+			</a>
+			<!-- Main Navigation-->
+			<nav class="site-menu">
+				<ul>
+					<li class="has-megamenu">
+						<a href="shop_list.html"><span>식품/생활</span></a>
+						<ul class="mega-menu">
+							<li><a href="#">서브1</a></li>
+							<li><a href="#">서브2</a></li>
+						</ul>
+					</li>
+					<li class="has-megamenu">
+						<a href="shop_list.html"><span>가구/홈</span></a>
+						<ul class="mega-menu">
+							<li><a href="#">서브1</a></li>
+							<li><a href="#">서브2</a></li>
+						</ul>
+					</li>
+					<li class="has-megamenu"><a href="shop_list.html"><span>가전/디지털</span></a></li>
+					<li class="has-megamenu"><a href="shop_list.html"><span>스포츠/자동차</span></a></li>
+					<li class="has-megamenu">
+						<a href="shop_list.html"><span>취미/독서</span></a>
+						<ul class="mega-menu">
+							<li><a href="#">서브1</a></li>
+							<li><a href="#">서브2</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav> 
+		</div>
+    </header>
+
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+		<!-- Page Title-->
+		<div class="page-title">
+			<div class="container">
+				<div class="column">
+					<h2>마이페이지</h2>
+				</div>
+				<div class="column">
+					<ul class="breadcrumbs">
+						<li><a href="index.html">홈</a></li>
+						<li><a href="#">마이페이지</a></li>
+						<li>마이쇼핑</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Page Content -->
+		<section class="container padding-top-3x padding-bottom-3x">
+			<div class="row">
+				<div class="col-lg-3">
+					<aside class="user-info-wrapper">
+						<div class="user-info">
+							<div class="user-data">
+								<div class="info-label" data-toggle="tooltip" title="회원등급:일반회원"><i class="icon-medal"></i>일반회원</div>
+								<h4>홍길동</h4><span>포인트 현황</span></span><span>2017.2.12 14:30</span>
+							</div>
+						</div>
+					</aside>
+					<nav class="list-group">
+						<a class="list-group-item with-badge active" href="account_home.html">
+							<i class="icon-paper"></i>구입목록<span class="badge badge-primary badge-pill">6</span>
+						</a>
+						<a class="list-group-item with-badge" href="account_wishlist.html">
+							<i class="icon-heart"></i>관심상품<span class="badge badge-primary badge-pill">6</span>
+						</a>
+						<a class="list-group-item with-badge" href="account_cancle.html">
+							<i class="icon-paper"></i>취소/교환/반품현황<span class="badge badge-primary badge-pill">6</span>
+						</a>
+						<a class="list-group-item with-badge" href="account_tickets.html">
+							<i class="icon-tag"></i>할인쿠폰<span class="badge badge-primary badge-pill">6</span>
+						</a>
+						<a class="list-group-item with-badge" href="account_inquiry.html">
+							<i class="icon-paper"></i>1:1문의
+						</a>
+						<a class="list-group-item with-badge" href="account_profile.html">
+							<i class="icon-head"></i>회원정보
+						</a>
+						<div class="list-depth2">
+							<ul class="list-menu">
+								<li class="on"><a href="#">회원정보수정</a></li>
+								<li><a href="#">비밀번호변경</a></li>
+								<li><a href="#">회원탈퇴</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="col-lg-9">
+					<div class="padding-top-2x mt-2 hidden-lg-up"></div>
+					<h3>최근주문현황 <span class="text-sm text-muted">최근 1개월 주문 현황</span></h3>
+					<hr class="margin-bottom-1x">
+					<div class="steps d-flex flex-wrap flex-sm-nowrap justify-content-between">
+						<div class="step">
+							<div class="step-icon-wrap">
+								<div class="step-icon"><i class="pe-7s-cart"></i></div>
+							</div>
+							<h4 class="step-title">상품준비중 <span class="text-sm text-primary">4</span></h4>
+						</div>
+						<div class="step">
+							<div class="step-icon-wrap">
+								<div class="step-icon"><i class="pe-7s-config"></i></div>
+							</div>
+							<h4 class="step-title">상품출고대기 <span class="text-sm text-Muted">0</span></h4>
+						</div>
+						<div class="step">
+							<div class="step-icon-wrap">
+								<div class="step-icon"><i class="pe-7s-medal"></i></div>
+							</div>
+							<h4 class="step-title">상품출고 <span class="text-sm text-Muted">0</span></h4>
+						</div>
+						<div class="step">
+							<div class="step-icon-wrap">
+								<div class="step-icon"><i class="pe-7s-car"></i></div>
+							</div>
+							<h4 class="step-title">배송중 <span class="text-sm text-Muted">0</span></h4>
+						</div>
+						<div class="step">
+							<div class="step-icon-wrap">
+								<div class="step-icon"><i class="pe-7s-car"></i></div>
+							</div>
+							<h4 class="step-title">배송완료 <span class="text-sm text-primary">2</span></h4>
+						</div>
+					</div>
+					<div class="table-responsive">
+						<!-- 20180129 배송정보 a태그 href 수정 및 data-toggle,  data-target 추가 -->
+						<table class="table table-hover margin-bottom-none" style="min-width:700px;">
+							<colgroup>
+								<col style="width:80px" />
+								<col  />
+								<col style="width:100px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:105px" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th class="text-center">주문일자</th>
+									<th class="text-center">주문상품</th>
+									<th class="text-center">상품금액</th>
+									<th class="text-center">배송비</th>
+									<th class="text-center">결제금액</th>
+									<th class="text-center">주문상태</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="text-center">
+										<span>2017.11.20</span>
+										<br>
+										<a href="account_orders.html" class="text-small">1517035973271</a>
+									</td>
+									<td>(DWT) 비행기 좌석 KTX 전용 이어폰 젠더 (WH2819)</td>
+									<td class="text-right">
+										2,410 원<br>(1개)
+									</td>
+									<td class="text-right">2,500원</td>
+									<td class="text-right">5,910원</td>
+									<td class="text-center">
+										<span class="text-danger">주문취소</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center">
+										<span>2017.11.20</span>
+										<br>
+										<a href="account_orders.html" class="text-small">1517035973271</a>
+									</td>
+									<td>(DWT) 비행기 좌석 KTX 전용 이어폰 젠더 (WH2819)</td>
+									<td class="text-right">
+										2,410 원<br>(1개)
+									</td>
+									<td class="text-right">2,500원</td>
+									<td class="text-right">5,910원</td>
+									<td class="text-center">
+											<a href="#" class="text-danger" data-toggle="modal" data-target="#shippingInfo">상품준비중</a>
+											<br>
+											<button type="button" class="btn btn-xsm btn-outline-primary">주문취소</button>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center">
+										<span>2017.11.20</span>
+										<br>
+										<a href="account_orders.html" class="text-small">1517035973271</a>
+									</td>
+									<td>(DWT) 비행기 좌석 KTX 전용 이어폰 젠더 (WH2819)</td>
+									<td class="text-right">
+										2,410 원<br>(1개)
+									</td>
+									<td class="text-right">2,500원</td>
+									<td class="text-right">5,910원</td>
+									<td class="text-center">
+											<a href="#" class="text-warning" data-toggle="modal" data-target="#shippingInfo">배송지연</a>
+											<br>
+											<button type="button" class="btn btn-xsm btn-outline-primary">주문취소</button>
+									</td>
+								</tr>
+
+								<tr>
+									<td class="text-center">
+										<span>2017.11.20</span>
+										<br>
+										<a href="account_orders.html" class="text-small">1517035973271</a>
+									</td>
+									<td>(DWT) 비행기 좌석 KTX 전용 이어폰 젠더 (WH2819)</td>
+									<td class="text-right">
+										2,410 원<br>(1개)
+									</td>
+									<td class="text-right">2,500원</td>
+									<td class="text-right">5,910원</td>
+									<td class="text-center">
+											<a href="#" class="text-info" data-toggle="modal" data-target="#shippingInfo"">배송중</a>
+											<br>
+											<button type="button" class="btn btn-xsm btn-outline-primary">주문취소</button>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center">
+										<span>2017.11.20</span>
+										<br>
+										<a href="account_orders.html" class="text-small">1517035973271</a>
+									</td>
+									<td>(DWT) 비행기 좌석 KTX 전용 이어폰 젠더 (WH2819)(DWT) 비행기 좌석 KTX 전용 이어폰 젠더 (WH2819)(DWT) 비행기 좌석 KTX 전용 이어폰 젠더 (WH2819)(DWT) 비행기 좌석 KTX 전용 이어폰 젠더 (WH2819)</td>
+									<td class="text-right">
+										2,410 원<br>(1개)
+									</td>
+									<td class="text-right">2,500원</td>
+									<td class="text-right">5,910원</td>
+									<td class="text-center">
+											<a href="#" class="text-success" data-toggle="modal" data-target="#shippingInfo">배송완료</a>
+											<br>
+											<button type="button" class="btn btn-xsm btn-outline-primary">주문취소</button>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center">
+										<span>2017.11.20</span>
+										<br>
+										<a href="account_orders.html" class="text-small">1517035973271</a>
+									</td>
+									<td>(DWT) 비행기 좌석 KTX 전용 이어폰 젠더 (WH2819)</td>
+									<td class="text-right">
+										2,410 원<br>(1개)
+									</td>
+									<td class="text-right">2,500원</td>
+									<td class="text-right">5,910원</td>
+									<td class="text-center">
+											<a href="#" class="text-success" data-toggle="modal" data-target="#shippingInfo">배송완료</a>
+											<br>
+											<button type="button" class="btn btn-xsm btn-outline-primary">주문취소</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- //20180129 배송정보 a태그 href 수정 및 data-toggle,  data-target 추가 -->
+					</div>
+					<hr>
+					<div class="text-right">
+						<a class="btn btn-link-primary margin-bottom-none" href="#"><i class="icon-download"></i>&nbsp;주문내역 더보기</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Site Footer-->
+		<footer class="site-footer">
+			<div class="container">
+				<img src="../resources/img/temp/img_footer1.gif" alt="">
+			</div>
+			<div class="site-info">
+				<div class="container">
+					<img src="../resources/img/temp/img_footer2.gif" alt="">
+				</div>
+			</div>
+		</footer>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-arrow-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../resources/js/vendor.min.js"></script>
+    <script src="../resources/js/scripts.min.js"></script>
+  </body>
+</html>

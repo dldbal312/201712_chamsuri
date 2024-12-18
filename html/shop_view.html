@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>상품상세 | 참수리</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="">
+    <meta name="keywords" content="참수리, 쇼핑몰, 쇼핑몰기획전, 기획전, 참기획전, 추천상품, 인기상품, 신규상품">
+    <meta name="author" content="참수리">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon and Apple Icons-->
+    <link rel="icon" type="image/x-icon" href="../resources/img/common/favicon.ico">
+    <link rel="icon" type="image/png" href="../resources/img/common/favicon.png">
+    <link rel="apple-touch-icon" href="../resources/img/common/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../resources/img/common/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../resources/img/common/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../resources/img/common/touch-icon-ipad-retina.png">
+    <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../resources/css/vendor.min.css">
+    <!-- Main Template Styles-->
+    <link id="mainStyles" rel="stylesheet" media="screen" href="../resources/css/styles.min.css">
+    <!-- Customizer Styles-->
+    <link rel="stylesheet" media="screen" href="../resources/css/customizer.min.css">
+    <!-- Modernizr-->
+    <script src="../resources/js/modernizr.min.js"></script>
+
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Off-Canvas Category Menu-->
+    <div class="offcanvas-container" id="shop-categories">
+      <!-- 로그인시 -->
+      <a class="account-link hidden-md-up2" href="#">
+        <div class="user-ava"><img src="../resources/img/temp/img_user.jpg" alt=""></div>
+        <div class="user-info">
+          <div class="user-name"><strong class="name">홍길동</strong>님</div>
+          <span class="text-sm text-white opacity-60">반갑습니다.</span>
+        </div>
+      </a>
+      <!-- //로그인시 -->
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children">
+            <span>
+              <a href="#">식품</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span>
+              <a href="#">가구/홈</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span>
+              <a href="#">가전/디지털</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span>
+              <a href="#">스포츠/자동차</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span>
+              <a href="#">취미/독서</a><span class="sub-menu-toggle"></span>
+            </span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">서브1</a></li>
+              <li><a href="#">서브2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Topbar-->
+    <div class="topbar">
+    	<div class="gl-menu">
+	    	<div class="inner_cm">
+				<div class="topbar-column">
+					<div class="hidden-md-max">
+						<a href="#" class="topleft">홈</a>
+						<a href="#" class="topleft">공지사항</a>
+						<a href="#" class="topleft">즐겨찾기</a>
+					</div>
+				</div>
+				<div class="topbar-column">
+					<a href="#" class="hidden-md-up2 mypage topleft"><i class="icon-head"></i></a>
+					<a href="#" class="hidden-md-max topleft">로그인</a>
+					<a href="#" class="hidden-md-max topleft">회원가입</a>
+					<a href="#" class="lineno topleft">
+						<span class="hidden-md-max">장바구니(</span>
+						<i class="hidden-md-up2 icon-bag"></i>
+						<span class="count">15</span>
+						<span class="hidden-md-max">)</span>
+					</a>
+					<a href="#" class="hidden-md-max topleft">주문내역</a>
+					<a href="#" class="hidden-md-max topleft">마이쇼핑</a>
+				</div>
+		    </div>
+		</div>
+	    <!-- Search-->
+	    <form method="get">
+	    	<div class="search-area">
+	    		<div class="inner_cm">
+					<div class="search-column">
+						<a href="index.html" class="comimg logo"><h1>참수리</h1></a>
+						<div class="search-box">
+							<input type="text" name="site_search" class="search_input">
+							<a href="#" class="btn_search">
+								<i class="icon-search"><span class="blind">검색</span></i>
+							</a>
+							<i class="comimg bg_logo"></i>
+						</div>
+					</div>
+					<div class="hidden-md-down search-column">
+						<div class="head_banner">
+							<div class="owl-carousel controls" data-owl-carousel="{ &quot;nav&quot;: true,&quot;loop&quot;: true}">
+								<img src="../resources/img/temp/img_head_bn1.jpg" alt="">
+								<img src="../resources/img/temp/img_head_bn2.jpg" alt="">
+								<img src="../resources/img/temp/img_head_bn3.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>	
+
+    <!-- Navbar-->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+    <header class="navbar navbar-sticky">
+		<div class="inner_cm">
+			<!-- Off-Canvas Toggle (#shop-categories)-->
+			<a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
+			<a href="#" class="comimg txt_unit">
+				<span class="blind">참기획전</span>
+			</a>
+			<!-- Main Navigation-->
+			<nav class="site-menu">
+				<ul>
+					<li class="has-megamenu">
+						<a href="shop_list.html"><span>식품/생활</span></a>
+						<ul class="mega-menu">
+							<li><a href="#">서브1</a></li>
+							<li><a href="#">서브2</a></li>
+						</ul>
+					</li>
+					<li class="has-megamenu">
+						<a href="shop_list.html"><span>가구/홈</span></a>
+						<ul class="mega-menu">
+							<li><a href="#">서브1</a></li>
+							<li><a href="#">서브2</a></li>
+						</ul>
+					</li>
+					<li class="has-megamenu"><a href="shop_list.html"><span>가전/디지털</span></a></li>
+					<li class="has-megamenu"><a href="shop_list.html"><span>스포츠/자동차</span></a></li>
+					<li class="has-megamenu">
+						<a href="shop_list.html"><span>취미/독서</span></a>
+						<ul class="mega-menu">
+							<li><a href="#">서브1</a></li>
+							<li><a href="#">서브2</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav> 
+		</div>
+    </header>
+
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+		<!-- Page Title-->
+		<div class="page-title">
+			<div class="container">
+				<div class="column">
+					<h2 class="blind">상품상세</h2>
+				</div>
+				<div class="column">
+					<ul class="breadcrumbs">
+						<li><a href="index.html">홈</a></li>
+						<li><a href="shop_list.html">가구/홈</a></li>
+						<li>상품상세</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Page Content-->
+		<div class="container padding-bottom-2x padding-top-2x">
+			<div class="row">
+			<!-- Poduct Gallery-->
+			<div class="col-md-6">
+				<div class="product-gallery">
+					<div class="gallery-wrapper">
+						<div class="gallery-item active">
+							<a href="../resources/img/temp/img_view1.jpg" data-hash="one" data-size="388x388"></a>
+						</div>
+						<div class="gallery-item">
+							<a href="../resources/img/temp/img_view2.jpg" data-hash="two" data-size="388x388"></a>
+						</div>
+						<div class="gallery-item">
+							<a href="../resources/img/temp/img_view3.jpg" data-hash="three" data-size="388x388"></a>
+						</div>
+						<div class="gallery-item">
+							<a href="../resources/img/temp/img_view4.jpg" data-hash="four" data-size="388x388"></a>
+						</div>
+					</div>
+					<div class="product-carousel owl-carousel">
+						<div data-hash="one"><img src="../resources/img/temp/img_view1.jpg" alt=""></div>
+						<div data-hash="two"><img src="../resources/img/temp/img_view2.jpg" alt=""></div>
+						<div data-hash="three"><img src="../resources/img/temp/img_view3.jpg" alt=""></div>
+						<div data-hash="four"><img src="../resources/img/temp/img_view4.jpg" alt=""></div>
+					</div>
+					<ul class="product-thumbnails">
+						<li class="active"><a href="#one"><img src="../resources/img/temp/img_view1.jpg" alt=""></a></li>
+						<li><a href="#two"><img src="../resources/img/temp/img_view2.jpg" alt=""></a></li>
+						<li><a href="#three"><img src="../resources/img/temp/img_view3.jpg" alt=""></a></li>
+						<li><a href="#four"><img src="../resources/img/temp/img_view4.jpg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Product Info-->
+			<div class="col-md-6 product-right">
+					<div class="rating-stars"><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star"></i>
+					</div>
+					<span class="text-muted align-middle">&nbsp;&nbsp;4.2 | 3 고객리뷰</span>
+					<h2 class="padding-top-1x text-normal">삼성전자 HD 32인치 TV 자가설치</h2>
+					<span class="h2 d-block margin-bottom-1x">
+						<del class="text-muted text-normal">39,900원</del>
+						<strong class="pointCol1">45,000원</strong>
+					</span>
+					<p class="txt-decs">R3 Market Platform 베타버전 2 오픈을 기념하여 [평화] 다용도회전홀더(161*192mm)를 무려 50% 파격할인가격으로 일주일동안만 rket Platform 베타버전 2 오픈을 기념하여 베타버전 2 오픈을 기념하여 [평화] 다용도회전홀더(161*192mm)를 무려 50% 파격할인가격으로 일주일동안만 rket Platform 베타버전 2 오픈을 기념하여  공급합니다.</p>
+					<div class="margin-top-1x cate-area">
+						배송정보 : <span class="category square1">무료배송</span>
+					</div>
+					<div class="row margin-top-1x">
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label for="size" class="pl0">사이즈</label>
+								<select class="form-control" id="size">
+									<option>230cm</option>
+									<option>235cm</option>
+									<option>240cm</option>
+									<option>245cm</option>
+									<option>250cm</option>
+									<option>260cm</option>
+									<option>270cm</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label for="color" class="pl0">컬러</label>
+								<select class="form-control" id="color">
+									<option>화이트</option>
+									<option>블랙</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label for="quantity" class="pl0">추가구성</label>
+								<select class="form-control" id="quantity">
+									<option>북9 Pen 악세사리</option>
+									<option>삼성파워패키지</option>
+									<option>소프트웨어</option>
+								</select>
+								</div>
+							</div>
+						</div>
+						<div class="view-option-list">
+							<ul class="opt-box">
+								<li>
+									<ul class="opt-txt">
+										<li>230cm</li>
+										<li>화이트</li>
+										<li>북9 Pen 악세사리</li>
+									</ul>
+									<div class="d-tbl">
+										<div class="cl">
+											<a href="#"><i class="icon-plus"></i><span class="blind">수랑추가</span></a>
+											<input type="text" title="수량" class="inp-num">
+											<a href="#"><i class="icon-minus"></i><span class="blind">수량삭제</span></a>
+										</div>
+										<strong class="clr">
+											20,000원
+										</strong>
+									</div>
+									<a href="#" class="btn-cross"><i class="icon-cross"></i><span class="blind">옵션삭제</span></a>
+								</li>
+								<li>
+									<ul class="opt-txt">
+										<li>230cm</li>
+										<li>화이트</li>
+										<li>북9 Pen 악세사리</li>
+									</ul>
+									<div class="d-tbl">
+										<div class="cl">
+											<a href="#"><i class="icon-plus"></i><span class="blind">수랑추가</span></a>
+											<input type="text" title="수량" class="inp-num">
+											<a href="#"><i class="icon-minus"></i><span class="blind">수량삭제</span></a>
+										</div>
+										<strong class="clr">
+											20,000원
+										</strong>
+									</div>
+									<a href="#" class="btn-cross"><i class="icon-cross"></i><span class="blind">옵션삭제</span></a>
+								</li>
+								<!-- 20180116 옵션선택이 없는경우 -->
+								<li>
+									<div class="opt-txt"><strong>수량</strong></div>
+									<div class="d-tbl">
+										<div class="cl">
+											<a href="#"><i class="icon-plus"></i><span class="blind">수랑추가</span></a>
+											<input type="text" title="수량" class="inp-num">
+											<a href="#"><i class="icon-minus"></i><span class="blind">수량삭제</span></a>
+										</div>
+										<strong class="clr">
+											20,000원
+										</strong>
+									</div>
+								</li>
+								<!-- //20180116 옵션선택이 없는경우 -->
+							</ul>
+							<div class="total-amount">
+								<dl class="add-sale">
+									<dt class="tit">추가할인</dt>
+									<dd>
+										<strong>220,000</strong><span class="won">원</span>
+									</dd>
+								</dl>
+								<dl class="total">
+									<dt class="tit">총상품금액</dt>
+									<dd class="pointCol1">
+										<strong>220,000</strong><span class="won">원</span>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="d-flex flex-wrap justify-content-between margin-top-1x">
+							<div class="entry-share mb-2 view_heart">
+								<button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="Whishlist"><i class="icon-heart"></i></button>
+				            </div>
+							<div class="sp-buttons mt-2 mb-2">
+								<button class="btn btn-lg btn btn-outline-secondary" data-toast data-toast-type="success" data-toast-position="topCenter" data-toast-icon="icon-circle-check" data-toast-title="장바구니" data-toast-message="장바구니에 담겼습니다."></i> 장바구니</button>
+								<button class="btn btn-lg btn-primary">구매하기</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Product Tabs-->
+				<div class=" padding-top-3x">
+					<div class="tab-wrap">
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="nav-item"><a class="nav-link active" href="#description" data-toggle="tab" role="tab">상품상세</a></li>
+							<li class="nav-item"><a class="nav-link" href="#reviews" data-toggle="tab" role="tab">상품후기 (3)</a></li>
+							<li class="nav-item"><a class="nav-link" href="#question" data-toggle="tab" role="tab">상품문의 (3)</a></li>
+							<li class="nav-item"><a class="nav-link" href="#shipping" data-toggle="tab" role="tab">배송안내</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane fade show active" id="description" role="tabpanel">
+								R3 Market Platform 베타버전 2 오픈을 기념하여 [평화] 다용도회전홀더(161*192mm)를 무려 50% 파격할인가격으로 일주일동안만 rket Platform 베타버전 2 오픈을 기념하여 베타버전 2 오픈을 기념하여 [평화] 다용도회전홀더(161*192mm)를 무려 50% 파격할인가격으로 일주일동안만 rket Platform 베타버전 2 오픈을 기념하여 공급합니다.<br>
+								R3 Market Platform 베타버전 2 오픈을 기념하여 [평화] 다용도회전홀더(161*192mm)를 무려 50% 파격할인가격으로 일주일동안만 rket Platform 베타버전 2 오픈을 기념하여 베타버전 2 오픈을 기념하여 [평화] 다용도회전홀더(161*192mm)를 무려 50% 파격할인가격으로 일주일동안만 rket Platform 베타버전 2 오픈을 기념하여 공급합니다.<br>
+								R3 Market Platform 베타버전 2 오픈을 기념하여 [평화] 다용도회전홀더(161*192mm)를 무려 50% 파격할인가격으로 일주일동안만 rket Platform 베타버전 2 오픈을 기념하여 베타버전 2 오픈을 기념하여 [평화] 다용도회전홀더(161*192mm)를 무려 50% 파격할인가격으로 일주일동안만 rket Platform 베타버전 2 오픈을 기념하여 공급합니다.<br><br><br>
+								<div class="txt-center">
+									<img src="../resources/img/temp/img_view.jpg" alt="">
+								</div>	
+							</div>
+							<div class="tab-pane fade" id="reviews" role="tabpanel">
+								<!-- Review-->
+								<div class="comment">
+									<div class="comment-author-ava"><img src="../resources/img/temp/img_user.jpg" alt="Review author"></div>
+									<div class="comment-body">
+										<div class="comment-header d-flex flex-wrap justify-content-between">
+											<h4 class="comment-title"><strong>제목이들어갑니다.</strong></h4>
+											<div class="mb-2">
+												<div class="rating-stars"><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i>
+												</div>
+											</div>
+										</div>
+										<p class="comment-text">후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.</p>
+										<div class="comment-footer">
+											<span class="comment-meta">홍길동</span>
+											<span class="comment-meta">2017.11.11 21:25:01</span>
+										</div>
+									</div>
+								</div>
+								<!-- Review-->
+								<div class="comment">
+									<div class="comment-author-ava"><img src="../resources/img/temp/img_user.jpg" alt="Review author"></div>
+									<div class="comment-body">
+										<div class="comment-header d-flex flex-wrap justify-content-between">
+											<h4 class="comment-title"><strong>제목이들어갑니다.</strong></h4>
+											<div class="mb-2">
+												<div class="rating-stars"><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star"></i><i class="icon-star"></i>
+												</div>
+											</div>
+										</div>
+										<p class="comment-text">후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.</p>
+										<div class="comment-footer">
+											<span class="comment-meta">홍길동</span>
+											<span class="comment-meta">2017.00.00 00:00:00</span>
+										</div>
+									</div>
+								</div>
+								<!-- Review-->
+								<div class="comment">
+									<div class="comment-author-ava"><img src="../resources/img/temp/img_user.jpg" alt="Review author"></div>
+									<div class="comment-body">
+										<div class="comment-header d-flex flex-wrap justify-content-between">
+											<h4 class="comment-title"><strong>제목이들어갑니다.</strong></h4>
+											<div class="mb-2">
+												<div class="rating-stars"><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star"></i><i class="icon-star"></i>
+												</div>
+											</div>
+										</div>
+										<p class="comment-text">후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.</p>
+										<div class="comment-footer">
+											<span class="comment-meta">홍길동</span>
+											<span class="comment-meta">2017.00.00 00:00:00</span>
+										</div>
+									</div>
+								</div>
+								<!-- Review Form-->
+								<h5 class="mb-30 padding-top-1x">상품후기</h5>
+								<form class="row" method="post">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="review_name">이름</label>
+											<input class="form-control form-control-rounded" type="text" id="review_name" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="review_email">이메일</label>
+											<input class="form-control form-control-rounded" type="email" id="review_email" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="review_subject">제목</label>
+											<input class="form-control form-control-rounded" type="text" id="review_subject" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="review_rating">평가</label>
+											<select class="form-control form-control-rounded" id="review_rating">
+												<option>5점</option>
+												<option>4점</option>
+												<option>3점</option>
+												<option>2점</option>
+												<option>1점</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group">
+											<label for="review_text">내용</label>
+											<textarea class="form-control form-control-rounded" id="review_text" rows="5" required></textarea>
+										</div>
+									</div>
+									<div class="col-12 text-right">
+										<button class="btn btn-outline-primary" type="submit">상품후기등록</button>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="question" role="tabpanel">
+								<!-- Review-->
+								<div class="comment">
+									<div class="comment-author-ava"><img src="../resources/img/temp/img_user.jpg" alt="Review author"></div>
+									<div class="comment-body">
+										<div class="comment-header d-flex flex-wrap justify-content-between">
+											<h4 class="comment-title"><strong>제목이들어갑니다.22</strong></h4>
+											<div class="mb-2">
+												<span class="category square2">답변완료</span>
+												<span class="category square1">답변대기</span>
+											</div>
+										</div>
+										<p class="comment-text">상품문의에 대한 내용이 들어갑니다. 상품문의에 대한 내용이 들어갑니다. 상품문의에 대한 내용이 들어갑니다. 상품문의에 대한 내용이 들어갑니다. 상품문의에 대한 내용이 들어갑니다. 상품문의에 대한 내용이 들어갑니다. 상품문의에 대한 내용이 들어갑니다.</p>
+										<div class="comment-footer">
+											<span class="comment-meta">홍길동</span>
+											<span class="comment-meta">2017.00.00 00:00:00</span>
+										</div>
+									</div>
+								</div>
+								<div class="comment answer">
+									<div class="comment-author-ava"><img src="../resources/img/temp/img_admin.jpg" alt="Review author"></div>
+									<div class="comment-body">
+										<div class="row">
+											<div class="col-sm-12">
+												<label for="review_text2" class="blind">답변입력</label>
+												<textarea class="form-control form-control-rounded" id="review_text2" rows="2" required=""></textarea>
+											</div>
+											<div class="col-sm-12">
+												<a class="btn btn-outline-primary" href="#">답변등록</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Review Form-->
+								<h5 class="mb-30 padding-top-1x">상품문의</h5>
+								<form class="row" method="post">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="review_name2">이름</label>
+											<input class="form-control form-control-rounded" type="text" id="review_name2" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="review_email2">이메일</label>
+											<input class="form-control form-control-rounded" type="email" id="review_email2" required>
+										</div>
+									</div>
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label for="review_subject2">제목</label>
+											<input class="form-control form-control-rounded" type="text" id="review_subject2" required>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group">
+											<label for="review_text2">내용</label>
+											<textarea class="form-control form-control-rounded" id="review_text2" rows="5" required></textarea>
+										</div>
+									</div>
+									<div class="col-12 text-right">
+										<button class="btn btn-outline-primary" type="submit">상품문의등록</button>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="shipping" role="tabpanel">
+								<div>
+									<strong>판매자명 : </strong> 참수리
+								</div>
+								<div>
+									<strong>판매자연락처 : </strong> 010-0000-0000
+								</div>
+								<div>
+									<strong>반품/교환 배송비 : </strong> (구매자귀책) 3,000원/6,000원 / 초기배송비 무료시 반품배송비 부과방법 : 편도
+								</div>
+								<div>
+									<strong>반품/교환지 주소 : </strong> 보내실 곳: 153783 서울특별시 금천구 가산동 벽산디지털밸리76차 22층 212호
+								</div>
+								<div>
+									<strong>반품/교환 안내 : </strong> 비자보호법 및 전자상거래법에 의거 전자제품 특성상 제품을 개봉했을 경우 불량이 아닌 경우에는 교환/환불이 되지 않습니다. <br>제품 수령후 7일이내 제품을 개봉하지 않았을 경우 교환/환불이 가능합니다.
+								</div>
+								<div>
+									<strong>반품/교환 기준</strong>
+								</div>
+								- 상품 수령 후 7일 이내에 신청하실 수 있습니다. <br>
+								(단, 제품이 표시광고 내용과 다르거나 불량 등 계약과 다르게 이행된 경우는
+								제품 수령일부터 3개월 이내, 그 사실을 안 날 또는 알 수 있었던 날부터 30일이내에 교환/반품이 가능합니다.)<br>
+								- 추가적으로 다음의 경우 해당하는 반품/교환은 신청이 불가능할 수 있습니다.<br>
+								- 소비자의 책임 있는 사유로 상품 등이 멸실 또는 훼손된 경우 (단지, 상품 확인을 위한 포장 훼손 제외)<br>
+								- 소비자의 사용 또는 소비에 의해 상품 등의 가치가 현저히 감소한 경우<br>
+								- 시간의 경과에 의해 재판매가 곤란할 정도로 상품 등의 가치가 현저히 감소한 경우<br>
+								- 복제가 가능한 상품 등의 포장을 훼손한 경우<br>
+								- 소비자의 주문에 따라 개별적으로 생산되는 상품이 제작에 들어간 경우
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 관련상품소기-->
+				<div class="tit-area main-tit margin-top-3x">
+					<h3 class="colum">관련상품</h3>
+					<span class="columr">함께 구매하면 좋은 상품 소개</span>
+				</div>
+				<!-- Carousel-->
+				<div class="owl-carousel shop-view-relat margin-top-1x" data-owl-carousel="{ &quot;nav&quot;: true, &quot;dots&quot;: true, &quot;margin&quot;: 30, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;576&quot;:{&quot;items&quot;:2},&quot;768&quot;:{&quot;items&quot;:3},&quot;991&quot;:{&quot;items&quot;:4},&quot;1200&quot;:{&quot;items&quot;:4}} }">
+					<!-- Product-->
+					<div class="grid-item">
+						<div class="product-card">
+							<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list1.jpg" alt=""></a>
+							<div class="product-info">
+								<h3 class="product-title">
+									<a href="#">삼성전자 HD 32인치 TV 자가설치</a>
+								</h3>
+								<h4 class="product-price">
+									<del>299,900원</del>
+									<strong class="pointCol2">290,000원</strong>
+								</h4>
+								<div class="cate-area">
+									<span class="category square1">무료배송</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Product-->
+					<div class="grid-item">
+						<div class="product-card">
+							<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list2.jpg" alt=""></a>
+							<div class="product-info">
+								<h3 class="product-title">
+									<a href="#">삼성전자 HD 32인치 TV 자가설치</a>
+								</h3>
+								<h4 class="product-price">
+									<del>299,900원</del>
+									<strong class="pointCol2">290,000원</strong>
+								</h4>
+								<div class="cate-area">
+									<span class="category square1">무료배송</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Product-->
+					<div class="grid-item">
+						<div class="product-card">
+							<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list3.jpg" alt=""></a>
+							<div class="product-info">
+								<h3 class="product-title">
+									<a href="#">삼성전자 HD 32인치 TV 자가설치</a>
+								</h3>
+								<h4 class="product-price">
+									<del>299,900원</del>
+									<strong class="pointCol2">290,000원</strong>
+								</h4>
+								<div class="cate-area">
+									<span class="category square1">무료배송</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Product-->
+					<div class="grid-item">
+						<div class="product-card">
+							<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list4.jpg" alt=""></a>
+							<div class="product-info">
+								<h3 class="product-title">
+									<a href="#">삼성전자 HD 32인치 TV 자가설치</a>
+								</h3>
+								<h4 class="product-price">
+									<del>299,900원</del>
+									<strong class="pointCol2">290,000원</strong>
+								</h4>
+								<div class="cate-area">
+									<span class="category square1">무료배송</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Product-->
+					<div class="grid-item">
+						<div class="product-card">
+							<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list2.jpg" alt=""></a>
+							<div class="product-info">
+								<h3 class="product-title">
+									<a href="#">삼성전자 HD 32인치 TV 자가설치</a>
+								</h3>
+								<h4 class="product-price">
+									<del>299,900원</del>
+									<strong class="pointCol2">290,000원</strong>
+								</h4>
+								<div class="cate-area">
+									<span class="category square1">무료배송</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Product-->
+					<div class="grid-item">
+						<div class="product-card">
+							<a class="product-thumb" href="shop_view.html"><img src="../resources/img/temp/img_shop_list3.jpg" alt=""></a>
+							<div class="product-info">
+								<h3 class="product-title">
+									<a href="#">삼성전자 HD 32인치 TV 자가설치</a>
+								</h3>
+								<h4 class="product-price">
+									<del>299,900원</del>
+									<strong class="pointCol2">290,000원</strong>
+								</h4>
+								<div class="cate-area">
+									<span class="category square1">무료배송</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Site Footer-->
+		<footer class="site-footer">
+			<div class="container">
+				<img src="../resources/img/temp/img_footer1.gif" alt="">
+			</div>
+			<div class="site-info">
+				<div class="container">
+					<img src="../resources/img/temp/img_footer2.gif" alt="">
+				</div>
+			</div>
+		</footer>
+    </div>
+
+    <!-- Photoswipe container-->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="pswp__bg"></div>
+		<div class="pswp__scroll-wrap">
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
+			<div class="pswp__ui pswp__ui--hidden">
+				<div class="pswp__top-bar">
+					<div class="pswp__counter"></div>
+						<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+						<button class="pswp__button pswp__button--share" title="Share"></button>
+						<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+						<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+						<div class="pswp__preloader">
+							<div class="pswp__preloader__icn">
+								<div class="pswp__preloader__cut">
+									<div class="pswp__preloader__donut"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+						<div class="pswp__share-tooltip"></div>
+					</div>
+					<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+					<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+					<div class="pswp__caption">
+						<div class="pswp__caption__center"></div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-arrow-up"></i></a>
+    <div class="site-backdrop"></div>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../resources/js/vendor.min.js"></script>
+    <script src="../resources/js/scripts.min.js"></script>
+    <!-- Customizer scripts-->
+    <script src="../resources/js/customizer.min.js"></script>
+  </body>
+</html>
